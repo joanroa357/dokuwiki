@@ -1,0 +1,31 @@
+===== Post-Mortem: Degradación en Sistema de Recomendaciones - 2024-03-10 =====
+
+{{tag>incident P1 machine-learning recommendations}}
+{{bureaucracy:incident_template}}
+
+=== Resumen Ejecutivo ===
+**Duración**: 2 horas 15 minutos (09:15 - 11:30 PST)  
+**Impacto**: 35% de usuarios con recomendaciones degradadas  
+**Servicios**: ML Inference Engine, Feature Store, Real-time Analytics  
+
+=== Timeline del Incidente ===
+| Timestamp | Evento |
+|-----------|--------|
+| **09:15** | 📉 Drop en engagement metrics detectado por data science |
+| **09:20** | 🔔 Alertas de high latency en inference service |
+| **09:25** | 🚨 Declarado P1 - Degradación parcial |
+| **09:40** | 🔍 Identificado memory leak en feature processing |
+| **10:15** | 🛠️ Rollback a versión estable |
+| **11:00** | 📊 Métricas retornando a niveles normales |
+| **11:30** | 🟢 Sistema completamente estable |
+
+=== Root Cause Analysis ===
+```yaml
+Primary Cause:
+  - Memory leak en nuevo algoritmo de feature engineering
+  - Garbage collector no pudo liberar objetos en heap
+
+Contributing Factors:
+  - Memory limits muy altas en containers
+  - Falta de memory profiling en CI/CD
+  - Load testing insuficiente para nuevos algoritmos

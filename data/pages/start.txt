@@ -1,0 +1,35 @@
+## 2. Post-Mortem de Incidente
+
+### Ejemplo: Caída del Servicio de Streaming
+```markdown
+===== Post-Mortem: Interrupción Global de Streaming - 2024-02-15 =====
+
+{{tag>incident P0 post-mortem SRE streaming}}
+{{bureaucracy:incident_template}}
+
+=== Resumen Ejecutivo ===
+**Duración**: 45 minutos (14:30 - 15:15 UTC)  
+**Impacto**: 78% de usuarios afectados globalmente  
+**Servicios**: Content Delivery, API Gateway, User Authentication  
+
+=== Timeline del Incidente ===
+| Timestamp | Evento |
+|-----------|--------|
+| **14:30** | 📈 Spike en errores 503 en edge locations |
+| **14:32** | 🔔 Paged SRE on-call (Jane Doe) |
+| **14:35** | 🚨 Declarado P0 - Interrupción global |
+| **14:40** | 🔍 Identificado problema en cache layer |
+| **14:50** | 🛠️ Implementado hotfix |
+| **15:05** | ✅ Servicios recuperándose |
+| **15:15** | 🟢 Todos los sistemas estables |
+
+=== Root Cause Analysis ===
+```yaml
+Primary Cause:
+  - Configuración errónea en deployment de Redis cluster
+  - Cache invalidation masiva debido a deployment de contenido
+
+Contributing Factors:
+  - Falta de testing de carga en staging
+  - Deployment en horario pico (14:00 UTC)
+  - Monitoring gaps en cache hit rates

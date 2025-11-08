@@ -1,0 +1,93 @@
+
+<p>
+## 2. Post-Mortem de Incidente
+</p>
+
+<p>
+### Ejemplo: Caída del Servicio de Streaming
+```markdown
+</p>
+
+<h2 class="sectionedit1" id="post-morteminterrupcion_global_de_streaming_-_2024-02-15">Post-Mortem: Interrupción Global de Streaming - 2024-02-15</h2>
+<div class="level2">
+
+<p>
+incident P0 post-mortem SRE streaming
+<a href="/dokuwiki/lib/exe/fetch.php?media=bureaucracy:incident_template" class="media mediafile mf_ wikilink2" title="bureaucracy:incident_template">incident_template</a>
+</p>
+
+</div>
+
+<h4 id="resumen_ejecutivo">Resumen Ejecutivo</h4>
+<div class="level4">
+
+<p>
+<strong>Duración</strong>: 45 minutos (14:30 - 15:15 UTC)  
+<strong>Impacto</strong>: 78% de usuarios afectados globalmente  
+<strong>Servicios</strong>: Content Delivery, <abbr title="Application Programming Interface">API</abbr> Gateway, User Authentication  
+</p>
+
+</div>
+
+<h4 id="timeline_del_incidente">Timeline del Incidente</h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> Timestamp </td><td class="col1"> Evento </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">———–</td><td class="col1">——–</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>14:30</strong> </td><td class="col1"> 📈 Spike en errores 503 en edge locations </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>14:32</strong> </td><td class="col1"> 🔔 Paged SRE on-call (Jane Doe) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <strong>14:35</strong> </td><td class="col1"> 🚨 Declarado P0 - Interrupción global </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>14:40</strong> </td><td class="col1"> 🔍 Identificado problema en cache layer </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <strong>14:50</strong> </td><td class="col1"> 🛠️ Implementado hotfix </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <strong>15:05</strong> </td><td class="col1"> ✅ Servicios recuperándose </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <strong>15:15</strong> </td><td class="col1"> 🟢 Todos los sistemas estables </td>
+	</tr>
+</table></div>
+<!-- EDIT{&quot;target&quot;:&quot;table&quot;,&quot;name&quot;:&quot;&quot;,&quot;hid&quot;:&quot;table&quot;,&quot;secid&quot;:2,&quot;range&quot;:&quot;472-880&quot;} -->
+</div>
+
+<h4 id="root_cause_analysis">Root Cause Analysis</h4>
+<div class="level4">
+
+<p>
+```yaml
+Primary Cause:
+</p>
+<ol>
+<li class="level1"><div class="li"> Configuración errónea en deployment de Redis cluster</div>
+</li>
+<li class="level1"><div class="li"> Cache invalidation masiva debido a deployment de contenido</div>
+</li>
+</ol>
+
+<p>
+Contributing Factors:
+</p>
+<ol>
+<li class="level1"><div class="li"> Falta de testing de carga en staging</div>
+</li>
+<li class="level1"><div class="li"> Deployment en horario pico (14:00 UTC)</div>
+</li>
+<li class="level1"><div class="li"> Monitoring gaps en cache hit rates</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Post-Mortem: Interrupci\u00f3n Global de Streaming - 2024-02-15&quot;,&quot;hid&quot;:&quot;post-morteminterrupcion_global_de_streaming_-_2024-02-15&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;91-&quot;} -->

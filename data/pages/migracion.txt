@@ -1,0 +1,43 @@
+## 3. Actualización: Migración de Base de Datos
+```markdown
+===== Reporte: Migración de Cassandra a ScyllaDB - 2024-04-05 =====
+
+{{tag>maintenance database migration performance}}
+{{bureaucracy:change_management_template}}
+
+=== Resumen de la Actualización ===
+**Ventana de Mantenimiento**: 4 horas (02:00 - 06:00 UTC)  
+**Servicios Afectados**: User Profile Service, Watch History  
+**Tipo de Cambio**: Migración de base de datos crítica  
+
+=== Timeline de la Migración ===
+| Timestamp | Actividad | Estado |
+|-----------|-----------|--------|
+| **02:00** | Inicio de ventana de mantenimiento | ✅ |
+| **02:15** | Drain de tráfico de Cassandra nodes | ✅ |
+| **02:45** | Inicio de data migration con dual-write | ✅ |
+| **03:30** | Verificación de consistencia de datos | ✅ |
+| **04:15** | Switch tráfico de lectura a ScyllaDB | ✅ |
+| **05:00** | Switch tráfico de escritura a ScyllaDB | ✅ |
+| **05:45** | Performance testing y validación | ✅ |
+| **06:00** | Finalización exitosa | ✅ |
+
+=== Métricas de Performance ===
+| Métrica | Cassandra | ScyllaDB | Mejora |
+|---------|-----------|----------|---------|
+| **P99 Read Latency** | 45ms | 12ms | 73% ↓ |
+| **P99 Write Latency** | 38ms | 9ms | 76% ↓ |
+| **Throughput** | 50K ops/sec | 145K ops/sec | 190% ↑ |
+| **CPU Usage** | 65% | 42% | 35% ↓ |
+
+=== Issues Encontrados ===
+  - ⚠️ **Minor**: High memory usage durante bulk migration
+  - ✅ **Resuelto**: Ajustado batch size y parallelism
+  - ⚠️ **Minor**: Connection pool exhaust en clientes Java
+  - ✅ **Resuelto**: Updated driver configuration
+
+=== Siguientes Pasos ===
+  - [ ] Monitoring extendido por 72 horas
+  - [ ] Cleanup de datos antiguos en Cassandra (2024-04-08)
+  - [ ] Optimization de queries para ScyllaDB (2024-04-12)
+  - [ ] Documentación de best practices (2024-04-15)
