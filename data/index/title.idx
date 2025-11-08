@@ -1,3 +1,10 @@
 Post-Mortem: Interrupción Global de Streaming - 2024-02-15
 Post-Mortem: Degradación en Sistema de Recomendaciones - 2024-03-10
 Reporte: Migración de Cassandra a ScyllaDB - 2024-04-05
+Metodología MECA: Monitorizar, Evaluar, Compartir, Aplicar
+Introducción a MECA
+Fase 1: Monitorizar
+Fase 2: Evaluar
+Fase 3: Compartir
+Fase 4: Aplicar
+Estándares de KPIs para Metodología MECA

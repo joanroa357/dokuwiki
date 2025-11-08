@@ -1,0 +1,151 @@
+
+<h2 class="sectionedit1" id="fase_1monitorizar">Fase 1: Monitorizar</h2>
+<div class="level2">
+
+<p>
+meca monitor capture acquisition
+<a href="/dokuwiki/lib/exe/fetch.php?media=anchor:monitorizar" class="media mediafile mf_ wikilink2" title="anchor:monitorizar">monitorizar</a>
+</p>
+
+</div>
+
+<h4 id="vision_general">Visión General</h4>
+<div class="level4">
+
+<p>
+<strong>Monitorizar</strong> es la fase de captura sistemática de conocimiento tanto tácito como explícito. El objetivo es asegurar que ningún conocimiento valioso se pierda y que toda la información crítica sea documentada de manera estructurada.
+</p>
+
+<p>
+<a href="/dokuwiki/lib/exe/fetch.php?media=metodologia:meca_monitor" class="media mediafile mf_ wikilink2" title="metodologia:meca_monitor">meca_monitor</a>
+</p>
+
+</div>
+
+<h4 id="estrategias_de_captura">Estrategias de Captura</h4>
+<div class="level4">
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Fase 1: Monitorizar&quot;,&quot;hid&quot;:&quot;fase_1monitorizar&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-415&quot;} -->
+<h3 class="sectionedit2" id="captura_proactiva">Captura Proactiva</h3>
+<div class="level3">
+
+<p>
+<strong>Sistemas automáticos</strong> que capturan conocimiento sin intervención humana:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>🔧 Incident Management</strong>: Post-mortems automáticos de PagerDuty</div>
+</li>
+<li class="level1"><div class="li"> <strong>📚 Code Repositories</strong>: Documentación desde GitHub/GitLab</div>
+</li>
+<li class="level1"><div class="li"> <strong>🚀 CI/CD Pipelines</strong>: Release notes y change logs</div>
+</li>
+<li class="level1"><div class="li"> <strong>📊 Monitoring Systems</strong>: Alert patterns y soluciones</div>
+</li>
+<li class="level1"><div class="li"> <strong>🎯 Project Management</strong>: Tickets de Jira como fuentes de conocimiento</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Captura Proactiva&quot;,&quot;hid&quot;:&quot;captura_proactiva&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;416-860&quot;} -->
+<h3 class="sectionedit3" id="captura_reactiva">Captura Reactiva</h3>
+<div class="level3">
+
+<p>
+<strong>Procesos estructurados</strong> para documentar conocimiento cuando ocurre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>📝 Templates Estructurados</strong>: <a href="/dokuwiki/doku.php?id=metodologia:incident-template" class="wikilink2" title="metodologia:incident-template" rel="nofollow" data-wiki-id="metodologia:incident-template">Plantilla de Incidente</a></div>
+</li>
+<li class="level1"><div class="li"> <strong>🔄 Workflows Guiados</strong>: <a href="/dokuwiki/doku.php?id=metodologia:capture-workflow" class="wikilink2" title="metodologia:capture-workflow" rel="nofollow" data-wiki-id="metodologia:capture-workflow">Workflow de Captura</a></div>
+</li>
+<li class="level1"><div class="li"> <strong>👥 Peer Documentation</strong>: <a href="/dokuwiki/doku.php?id=metodologia:pair-documentation" class="wikilink2" title="metodologia:pair-documentation" rel="nofollow" data-wiki-id="metodologia:pair-documentation">Documentación en Pares</a></div>
+</li>
+<li class="level1"><div class="li"> <strong>🎤 Retrospectivas</strong>: <a href="/dokuwiki/doku.php?id=metodologia:retro-documentation" class="wikilink2" title="metodologia:retro-documentation" rel="nofollow" data-wiki-id="metodologia:retro-documentation">Captura de Retrospectivas</a></div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="templates_de_captura">Templates de Captura</h4>
+<div class="level4">
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Captura Reactiva&quot;,&quot;hid&quot;:&quot;captura_reactiva&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;861-1305&quot;} -->
+<h3 class="sectionedit4" id="template_de_incidente">Template de Incidente</h3>
+<div class="level3">
+
+<p>
+```markdown
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Template de Incidente&quot;,&quot;hid&quot;:&quot;template_de_incidente&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:4,&quot;range&quot;:&quot;1306-1349&quot;} -->
+<h2 class="sectionedit5" id="incidentetitulo">Incidente: {Título}</h2>
+<div class="level2">
+
+<p>
+incident {severity} {services}
+</p>
+
+</div>
+
+<h4 id="metadata">Metadata</h4>
+<div class="level4">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> Campo </td><td class="col1"> Valor </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">——-</td><td class="col1">——-</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>Fecha</strong> </td><td class="col1"> {date} </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>Servicios</strong> </td><td class="col1"> {affected_services} </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <strong>Severidad</strong> </td><td class="col1"> {P0/P1/P2} </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>Duración</strong> </td><td class="col1"> {duration} </td>
+	</tr>
+</table></div>
+<!-- EDIT{&quot;target&quot;:&quot;table&quot;,&quot;name&quot;:&quot;&quot;,&quot;hid&quot;:&quot;table&quot;,&quot;secid&quot;:6,&quot;range&quot;:&quot;1441-1601&quot;} -->
+</div>
+
+<h4 id="timeline">Timeline</h4>
+<div class="level4">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> Timestamp </td><td class="col1"> Evento </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">———–</td><td class="col1">——–</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> {time} </td><td class="col1"> {event_description} </td>
+	</tr>
+</table></div>
+<!-- EDIT{&quot;target&quot;:&quot;table&quot;,&quot;name&quot;:&quot;&quot;,&quot;hid&quot;:&quot;table1&quot;,&quot;secid&quot;:7,&quot;range&quot;:&quot;1620-1698&quot;} -->
+</div>
+
+<h4 id="root_cause">Root Cause</h4>
+<div class="level4">
+
+<p>
+{root_cause_analysis}
+</p>
+
+</div>
+
+<h4 id="action_items">Action Items</h4>
+<div class="level4">
+<ol>
+<li class="level1"><div class="li"> [ ] {action_item}</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Incidente: {T\u00edtulo}&quot;,&quot;hid&quot;:&quot;incidentetitulo&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:5,&quot;range&quot;:&quot;1350-&quot;} -->

@@ -1,0 +1,36 @@
+
+## 3. Página: Fase 2 - Evaluar
+
+```markdown
+===== Fase 2: Evaluar =====
+
+{{tag>meca evaluate quality validation assessment}}
+{{anchor:evaluar}}
+
+=== Visión General ===
+**Evaluar** es la fase donde el conocimiento capturado es validado, calificado y mejorado. El objetivo es asegurar que solo el conocimiento de alta calidad, actualizado y relevante sea distribuido y aplicado.
+
+{{meca_evaluate>}}
+
+=== Sistema de Calidad de Conocimiento ===
+
+#### Métricas de Calidad Automatizadas
+```php
+// conf/quality_metrics.php
+$conf['knowledge_quality_metrics'] = [
+    'freshness' => [
+        'weight' => 0.3,
+        'calculation' => 'max(0, 1 - (days_since_update / 180))',
+        'threshold' => 0.7  // > 70% freshness
+    ],
+    'engagement' => [
+        'weight' => 0.4,
+        'calculation' => 'log10(views + comments * 2 + edits * 3) / 10',
+        'threshold' => 0.6  // > 60% engagement score
+    ],
+    'expert_validation' => [
+        'weight' => 0.3,
+        'calculation' => 'min(1, verified_reviews_count / 2)',
+        'threshold' => 0.8  // > 80% validation rate
+    ]
+];

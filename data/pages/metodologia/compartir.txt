@@ -1,0 +1,94 @@
+
+## 4. Página: Fase 3 - Compartir
+
+```markdown
+===== Fase 3: Compartir =====
+
+{{tag>meca share distribute dissemination delivery}}
+{{anchor:compartir}}
+
+=== Visión General ===
+**Compartir** es la fase donde el conocimiento validado es distribuido efectivamente a las personas correctas, en el momento correcto y en el contexto correcto. El objetivo es maximizar el descubrimiento y acceso al conocimiento relevante.
+
+{{meca_share>}}
+
+=== Estrategias de Distribución ===
+
+#### Distribución Proactiva
+**Sistemas que llevan el conocimiento al usuario:**
+
+  * **📧 [[knowledge-digests|Newsletters Automatizadas]]**
+    - Frecuencia: Semanal para resúmenes, diaria para crítico
+    - Personalización: Basada en roles e intereses
+    - Contenido: Nuevo conocimiento, actualizaciones, destacados
+
+  * **💬 [[slack-integration|Integración con Slack]]**
+    - Canales: #knowledge-updates, #tech-news
+    - Bots: @knowledge-bot para notificaciones inteligentes
+    - Formatos: Resúmenes, links profundos, alertas
+
+  * **🎯 [[personalized-feeds|Feeds Personalizados]]**
+    - Algoritmo: Basado en historial, rol, proyectos
+    - Discovery: Contenido relacionado y trending
+    - Engagement: Sistema de feedback y ratings
+
+  * **📱 [[mobile-alerts|Alertas Móviles]]**
+    - Prioridad: Solo conocimiento crítico/time-sensitive
+    - Formatos: Push notifications, SMS para emergencias
+    - Audience: Targeting por on-call, expertise
+
+#### Distribución Reactiva
+**Sistemas que responden a necesidades inmediatas:**
+
+  * **🔍 [[semantic-search|Búsqueda Semántica Mejorada]]**
+    - NLP: Understanding de intención y contexto
+    - Resultados: Rankeados por relevancia y calidad
+    - Sugerencias: Consultas relacionadas y contenido
+
+  * **🤖 [[chatbot-integration|Chatbots de Conocimiento]]**
+    - Plataformas: Slack, Microsoft Teams, Web
+    - Capacidades: Q&A, troubleshooting guiado
+    - Escalación: A humanos cuando sea necesario
+
+  * **📚 [[learning-paths|Rutas de Aprendizaje]]**
+    - Onboarding: Paths para nuevos ingenieros
+    - Especialización: Deep dives por tecnología
+    - Certificación: Validación de comprensión
+
+=== Personalización y Contexto ===
+
+#### Basado en Roles
+```yaml
+role_based_delivery:
+  sre_engineer:
+    priority_content:
+      - incident_runbooks
+      - monitoring_guides
+      - capacity_planning
+      - post_mortems
+    notification_channels:
+      - pagerduty_critical
+      - slack_sre_alerts
+      - mobile_high_priority
+      
+  software_engineer:
+    priority_content:
+      - api_documentation
+      - development_guides
+      - code_review_standards
+      - architecture_decisions
+    notification_channels:
+      - slack_engineering
+      - email_weekly_digest
+      - in_app_suggestions
+
+  engineering_manager:
+    priority_content:
+      - team_metrics
+      - project_guidelines
+      - people_management
+      - strategic_decisions
+    notification_channels:
+      - email_daily_brief
+      - slack_management
+      - mobile_important

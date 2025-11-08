@@ -1,0 +1,37 @@
+===== Estándares de KPIs para Metodología MECA =====
+
+{{tag>kpi standards metrics measurement meca}}
+{{anchor:metricas}}
+
+=== Visión General ===
+Los **Estándares de KPIs** definen el framework unificado para medir la efectividad de la metodología MECA en Netflix. Este documento establece las métricas obligatorias, objetivos y frecuencias de reporting para cada fase del ciclo de conocimiento.
+
+{{meca_kpi_framework>}}
+
+=== Principios Fundamentales ===
+
+#### Calidad sobre Cantidad
+> "Medir lo que importa, no solo lo que es fácil de medir"
+
+  * **Accionabilidad**: Cada KPI debe impulsar decisiones específicas
+  * **Relevancia**: Alineado con objetivos de negocio medibles
+  * **Comparabilidad**: Métricas consistentes across equipos y tiempos
+  * **Simplicidad**: Fácil de entender y comunicar
+
+#### Estándares Técnicos
+```yaml
+kpi_technical_standards:
+  data_source:
+    - requirement: "Sistema automatizado de recolección"
+    - validation: "Audit trail completo"
+    - freshness: "Máximo 24 horas de desfase"
+  
+  calculation:
+    - methodology: "Documentación clara del cálculo"
+    - consistency: "Misma fórmula across reporting periods"
+    - transparency: "Código/metodología disponible para auditoría"
+  
+  reporting:
+    - frequency: "Definida por ciclo de decisión"
+    - format: "Standardized templates"
+    - audience: "Stakeholders claramente definidos"

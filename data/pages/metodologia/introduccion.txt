@@ -1,0 +1,95 @@
+===== Introducción a MECA =====
+
+{{tag>meca introduction overview methodology}}
+{{anchor:introduccion}}
+
+=== ¿Qué es MECA? ===
+**MECA** (Monitorizar, Evaluar, Compartir, Aplicar) es un framework de gestión del conocimiento diseñado específicamente para entornos técnicos de alta escala como Netflix. Es una metodología cíclica que asegura que el conocimiento sea capturado, mejorado, distribuido y aplicado efectivamente.
+
+{{meca_cycle>}}
+
+=== Las Cuatro Fases ===
+
+==== 🎯 Monitorizar ====
+**Captura sistemática** del conocimiento tácito y explícito
+  * **Objetivo**: No dejar que el conocimiento se pierda
+  * **Enfoque**: Proactivo y reactivo
+  * **Resultado**: Base de conocimiento completa
+
+==== 📊 Evaluar ====
+**Validación de calidad** y relevancia del contenido
+  * **Objetivo**: Mantener contenido confiable y actualizado
+  * **Enfoque**: Métricas objetivas y validación humana
+  * **Resultado**: Conocimiento verificado y de alta calidad
+
+==== 🚀 Compartir ====
+**Distribución efectiva** del conocimiento correcto a las personas correctas
+  * **Objetivo**: Maximizar el descubrimiento y acceso
+  * **Enfoque**: Personalizado y contextual
+  * **Resultado**: Conocimiento fácilmente accesible
+
+==== 💡 Aplicar ====
+**Uso práctico** del conocimiento para resolver problemas y tomar decisiones
+  * **Objetivo**: Transformar conocimiento en acción
+  * **Enfoque**: Integrado en flujos de trabajo
+  * **Resultado**: Mejora medible en resultados
+
+=== Beneficios para Netflix ===
+
+==== Para Ingeniería ====
+| Beneficio | Métrica | Impacto |
+|-----------|---------|---------|
+| **Reducción de MTTR** | Mean Time to Resolution | -30% |
+| **Onboarding acelerado** | Tiempo hasta productividad | -40% |
+| **Menos incidentes** | Incidentes recurrentes | -60% |
+| **Mejores decisiones** | Calidad de decisiones | +25% |
+
+==== Para Negocio ====
+| Beneficio | Impacto |
+|-----------|---------|
+| **Reducción de costos** | Menos tiempo en troubleshooting |
+| **Mayor innovación** | Reutilización de patrones exitosos |
+| **Escalabilidad** | Conocimiento disponible globalmente |
+| **Continuidad** | Reducción de "bus factor" |
+
+=== Principios Fundamentales ===
+
+==== Conocimiento como Activo ====
+> "El conocimiento es el único activo que crece cuando se comparte"
+
+  * **Propiedad colectiva**: Todos son responsables del conocimiento
+  * **Valor medible**: ROI claro en cada fase
+  * **Mejora continua**: Ciclo constante de refinamiento
+
+
+==== Para Equipos ====
+  * [[meca-team-setup|Configuración para Equipos]]
+  * [[meca-rollout-plan|Plan de Implementación]]
+  * [[meca-success-metrics|Métricas de Éxito]]
+
+==== Para Líderes ====
+  * [[meca-business-case|Caso de Negocio]]
+  * [[meca-roi-calculator|Calculadora de ROI]]
+  * [[meca-adoption-strategy|Estrategia de Adopción]]
+
+=== Recursos Adicionales ===
+
+  * 📚 [[meca-research-base|Base de Investigación]]
+  * 🎓 [[meca-training|Programa de Training]]
+  * 🔧 [[meca-tools|Herramientas y Integraciones]]
+  * 📊 [[meca-dashboard|Dashboard de Progreso]]
+
+=== Próximos Pasos ===
+
+{{todo>}}
+  * [ ] **Leer**: [[monitorizar|Fase 1: Monitorizar]]
+  * [ ] **Explorar**: [[meca-examples|Ejemplos Prácticos]]
+  * [ ] **Practicar**: [[meca-quickstart|Guía Rápida]]
+  * [ ] **Unirse**: [[meca-community|Comunidad MECA]]
+{{todo}}
+
+----
+**Estado**: 🟢 Activo  
+**Última actualización**: {{page>last_modified}}  
+**Propietario**: [~knowledge.management]  
+**Próxima revisión**: 2024-07-01

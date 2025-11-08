@@ -1,0 +1,55 @@
+===== Fase 1: Monitorizar =====
+
+{{tag>meca monitor capture acquisition}}
+{{anchor:monitorizar}}
+
+=== Visión General ===
+**Monitorizar** es la fase de captura sistemática de conocimiento tanto tácito como explícito. El objetivo es asegurar que ningún conocimiento valioso se pierda y que toda la información crítica sea documentada de manera estructurada.
+
+{{meca_monitor>}}
+
+=== Estrategias de Captura ===
+
+==== Captura Proactiva ====
+**Sistemas automáticos** que capturan conocimiento sin intervención humana:
+
+  * **🔧 Incident Management**: Post-mortems automáticos de PagerDuty
+  * **📚 Code Repositories**: Documentación desde GitHub/GitLab
+  * **🚀 CI/CD Pipelines**: Release notes y change logs
+  * **📊 Monitoring Systems**: Alert patterns y soluciones
+  * **🎯 Project Management**: Tickets de Jira como fuentes de conocimiento
+
+==== Captura Reactiva ====
+**Procesos estructurados** para documentar conocimiento cuando ocurre:
+
+  * **📝 Templates Estructurados**: [[incident-template|Plantilla de Incidente]]
+  * **🔄 Workflows Guiados**: [[capture-workflow|Workflow de Captura]]
+  * **👥 Peer Documentation**: [[pair-documentation|Documentación en Pares]]
+  * **🎤 Retrospectivas**: [[retro-documentation|Captura de Retrospectivas]]
+
+=== Templates de Captura ===
+
+==== Template de Incidente ====
+```markdown
+===== Incidente: {Título} =====
+
+{{tag>incident {severity} {services}}}
+
+=== Metadata ===
+| Campo | Valor |
+|-------|-------|
+| **Fecha** | {date} |
+| **Servicios** | {affected_services} |
+| **Severidad** | {P0/P1/P2} |
+| **Duración** | {duration} |
+
+=== Timeline ===
+| Timestamp | Evento |
+|-----------|--------|
+| {time} | {event_description} |
+
+=== Root Cause ===
+{root_cause_analysis}
+
+=== Action Items ===
+  - [ ] {action_item}

@@ -1,0 +1,63 @@
+
+<p>
+## 3. Página: Fase 2 - Evaluar
+</p>
+
+<p>
+```markdown
+</p>
+
+<h2 class="sectionedit1" id="fase_2evaluar">Fase 2: Evaluar</h2>
+<div class="level2">
+
+<p>
+meca evaluate quality validation assessment
+<a href="/dokuwiki/lib/exe/fetch.php?media=anchor:evaluar" class="media mediafile mf_ wikilink2" title="anchor:evaluar">evaluar</a>
+</p>
+
+</div>
+
+<h4 id="vision_general">Visión General</h4>
+<div class="level4">
+
+<p>
+<strong>Evaluar</strong> es la fase donde el conocimiento capturado es validado, calificado y mejorado. El objetivo es asegurar que solo el conocimiento de alta calidad, actualizado y relevante sea distribuido y aplicado.
+</p>
+
+<p>
+<a href="/dokuwiki/lib/exe/fetch.php?media=metodologia:meca_evaluate" class="media mediafile mf_ wikilink2" title="metodologia:meca_evaluate">meca_evaluate</a>
+</p>
+
+</div>
+
+<h4 id="sistema_de_calidad_de_conocimiento">Sistema de Calidad de Conocimiento</h4>
+<div class="level4">
+
+<p>
+#### Métricas de Calidad Automatizadas
+```php
+<em> conf/quality_metrics.php
+$conf[&#039;knowledge_quality_metrics&#039;] = [
+    &#039;freshness&#039; ⇒ [
+        &#039;weight&#039; ⇒ 0.3,
+        &#039;calculation&#039; ⇒ &#039;max(0, 1 - (days_since_update / 180))&#039;,
+        &#039;threshold&#039; ⇒ 0.7  </em> &gt; 70% freshness
+</p>
+<pre class="code">  ],
+  &#039;engagement&#039; =&gt; [
+      &#039;weight&#039; =&gt; 0.4,
+      &#039;calculation&#039; =&gt; &#039;log10(views + comments * 2 + edits * 3) / 10&#039;,
+      &#039;threshold&#039; =&gt; 0.6  // &gt; 60% engagement score
+  ],
+  &#039;expert_validation&#039; =&gt; [
+      &#039;weight&#039; =&gt; 0.3,
+      &#039;calculation&#039; =&gt; &#039;min(1, verified_reviews_count / 2)&#039;,
+      &#039;threshold&#039; =&gt; 0.8  // &gt; 80% validation rate
+  ]</pre>
+
+<p>
+];
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Fase 2: Evaluar&quot;,&quot;hid&quot;:&quot;fase_2evaluar&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;47-&quot;} -->

@@ -1,0 +1,47 @@
+===== Metodología MECA: Monitorizar, Evaluar, Compartir, Aplicar =====
+
+{{tag>meca methodology knowledge-management framework}}
+
+=== Navegación Rápida ===
+  * [[metodologia:introduccion|Introducción]]
+  * [[metodologia:monitorizar|Fase 1: Monitorizar]]
+  * [[metodologia:evaluar|Fase 2: Evaluar]] 
+  * [[metodologia:compartir|Fase 3: Compartir]]
+  * [[metodologia:aplicar|Fase 4: Aplicar]]
+  * [[metodologia:metricas|Métricas y KPIs]]
+----
+
+== {{anchor:introduccion}} Introducción a MECA ==
+
+=== ¿Qué es MECA? ===
+**MECA** es un framework de gestión del conocimiento diseñado específicamente para entornos técnicos como Netflix. Representa las cuatro fases clave del ciclo de vida del conocimiento:
+
+{{meca_cycle>}}
+
+=== Objetivos Principales ===
+  * **🎯 Capturar** conocimiento tácito y explícito
+  * **📊 Evaluar** la calidad y relevancia del contenido  
+  * **🚀 Compartir** conocimiento de manera efectiva
+  * **💡 Aplicar** conocimiento para resolver problemas
+
+=== Beneficios para Netflix ===
+| Beneficio | Impacto |
+|-----------|---------|
+| **Reducción de MTTR** | -30% en tiempo de resolución de incidentes |
+| **Onboarding acelerado** | -40% en tiempo de ramp-up |
+| **Mejor calidad de decisiones** | +25% en efectividad de soluciones |
+| **Reducción de dependencias** | -60% en "bus factor" |
+
+----
+
+== {{anchor:monitorizar}} Fase 1: Monitorizar ==
+
+=== Sistemas de Captura ===
+
+==== Captura Proactiva ====
+```yaml
+Automated Knowledge Sources:
+  - incident_management: Post-mortems automáticos
+  - code_repositories: READMEs y documentación técnica
+  - deployment_pipelines: Change logs y release notes
+  - monitoring_systems: Alert patterns y soluciones

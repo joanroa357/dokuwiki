@@ -1,0 +1,20 @@
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1762626076;s:8:"modified";i:1762629855;}s:11:"last_change";a:9:{s:4:"date";i:1762629855;s:2:"ip";s:3:"::1";s:4:"type";s:1:"E";s:2:"id";s:11:"metodologia";s:4:"user";s:0:"";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:-115;s:4:"mode";s:4:"page";}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:5:"title";s:59:"Metodología MECA: Monitorizar, Evaluar, Compartir, Aplicar";s:11:"description";a:2:{s:15:"tableofcontents";a:2:{i:0;a:4:{s:3:"hid";s:53:"metodologia_mecamonitorizar_evaluar_compartir_aplicar";s:5:"title";s:59:"Metodología MECA: Monitorizar, Evaluar, Compartir, Aplicar";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:1;a:4:{s:3:"hid";s:17:"captura_proactiva";s:5:"title";s:17:"Captura Proactiva";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:464:"Metodología MECA: Monitorizar, Evaluar, Compartir, Aplicar
+
+
+
+Navegación Rápida
+
+	*  Introducción
+	*  Fase 1: Monitorizar
+	*  Fase 2: Evaluar 
+	*  Fase 3: Compartir
+	*  Fase 4: Aplicar
+	*  Métricas y KPIs
+
+----
+
+{{anchor:introduccion}} Introducción a MECA
+
+¿Qué es MECA?
+
+MECA es un framework de gestión del conocimiento diseñado específicamente para entornos técnicos como Netflix. Representa las cuatro fases clave del ciclo de vida del conocimiento:";}s:8:"relation";a:3:{s:10:"references";a:6:{s:24:"metodologia:introduccion";b:1;s:23:"metodologia:monitorizar";b:1;s:19:"metodologia:evaluar";b:1;s:21:"metodologia:compartir";b:1;s:19:"metodologia:aplicar";b:1;s:20:"metodologia:metricas";b:1;}s:5:"media";a:1:{s:10:"meca_cycle";b:0;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:4:{s:4:"date";a:2:{s:7:"created";i:1762626076;s:8:"modified";i:1762629855;}s:11:"last_change";a:9:{s:4:"date";i:1762629855;s:2:"ip";s:3:"::1";s:4:"type";s:1:"E";s:2:"id";s:11:"metodologia";s:4:"user";s:0:"";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:-115;s:4:"mode";s:4:"page";}s:4:"user";s:0:"";s:7:"creator";s:0:"";}}

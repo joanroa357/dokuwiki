@@ -1,0 +1,128 @@
+
+## 5. Página: Fase 4 - Aplicar
+
+```markdown
+===== Fase 4: Aplicar =====
+
+{{tag>meca apply implement action utilization}}
+{{anchor:aplicar}}
+
+=== Visión General ===
+**Aplicar** es la fase donde el conocimiento se transforma en acción y resultados medibles. El objetivo es integrar el conocimiento directamente en los flujos de trabajo y procesos de decisión para generar impacto tangible.
+
+{{meca_apply>}}
+
+=== Sistemas de Aplicación Práctica ===
+
+#### Integración en Flujos de Trabajo
+**Conocimiento en el punto de necesidad:**
+
+  * **🔧 [[ide-plugins|Plugins para IDEs]]**
+    - VS Code, IntelliJ, Eclipse
+    - Sugerencias de código en contexto
+    - Snippets y templates reutilizables
+    - Documentación de APIs integrada
+
+  * **🛠️ [[cli-tools|Herramientas de Línea de Comando]]**
+    - `netflix-knowledge search [query]`
+    - `netflix-knowledge suggest --context`
+    - Integración con herramientas existentes
+    - Scripts de automatización basados en conocimiento
+
+  * **📱 [[mobile-apps|Aplicaciones Móviles]]**
+    - Acceso offline a runbooks críticos
+    - Notificaciones push para conocimiento time-sensitive
+    - Interfaces optimizadas para móvil
+    - Sync automático con versión más reciente
+
+  * **🔌 [[api-access|APIs para Integración]]**
+    - REST API para acceso programático
+    - Webhooks para actualizaciones en tiempo real
+    - SDKs para lenguajes populares
+    - Documentación interactiva de APIs
+
+#### Templates Accionables
+**Formatos diseñados para uso directo:**
+
+  * **📋 [[runbooks|Runbooks Ejecutables]]**
+    ```markdown
+    ==== Runbook: {Procedimiento} ====
+    
+    {{tag>runbook executable {service}}}
+    
+    === Pre-requisitos ===
+    {checklist_pre_requisitos}
+    
+    === Pasos ===
+    1. `{comando_ejecutable}`
+    2. `{otro_comando}`
+    3. Verificar: `{comando_validacion}`
+    
+    === Troubleshooting ===
+    {soluciones_problemas_comunes}
+    ```
+
+  * **✅ [[checklists|Checklists de Validación]]**
+    ```markdown
+    ==== Checklist: {Validación} ====
+    
+    {{tag>checklist validation {context}}}
+    
+    {{todo>}}
+    * [ ] {item_verificacion_1}
+    * [ ] {item_verificacion_2}
+    * [ ] {item_verificacion_3}
+    {{todo}}
+    ```
+
+  * **💻 [[code-templates|Plantillas de Código]]**
+    ```python
+    # netflix_standards.py
+    class StandardMicroservice:
+        """
+        Template para microservicios estándar Netflix
+        Basado en :architecture:microservice-template
+        """
+        
+        def __init__(self):
+            self.monitoring = StandardMonitoring()
+            self.circuit_breaker = CircuitBreaker()
+            self.health_check = HealthCheck()
+    ```
+
+  * **🌳 [[decision-trees|Árboles de Decisión]]**
+    ```markdown
+    ==== Decision Tree: {Escenario} ====
+    
+    {{tag>decision-tree {domain}}}
+    
+    ```mermaid
+    graph TD
+        A[Problema] --> B{Síntoma X?}
+        B -->|Sí| C[Solucion A]
+        B -->|No| D[Solucion B]
+    ```
+    ```
+
+=== Medición de Aplicación ===
+
+#### Métricas de Uso y Efectividad
+```yaml
+application_metrics:
+  knowledge_utilization:
+    - runbooks_executed: count_per_time_period
+    - checklists_completed: completion_rate
+    - templates_used: adoption_rate
+    - api_calls: requests_per_endpoint
+  
+  effectiveness_metrics:
+    - time_saved: estimated_minutes_saved
+    - errors_prevented: error_reduction_rate
+    - decisions_informed: decisions_using_knowledge
+    - incidents_avoided: incident_prevention_rate
+  
+  business_impact:
+    - mttr_reduction: percentage_improvement
+    - onboarding_acceleration: time_to_productivity
+    - cost_savings: calculated_roi
+    - quality_improvement: defect_re

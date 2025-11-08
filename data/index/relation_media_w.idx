@@ -1,2 +1,16 @@
 bureaucracy:incident_template
 bureaucracy:change_management_template
+meca_cycle
+anchor:introduccion
+metodologia:meca_cycle
+metodologia:todo
+anchor:monitorizar
+metodologia:meca_monitor
+anchor:evaluar
+metodologia:meca_evaluate
+anchor:compartir
+metodologia:meca_share
+anchor:aplicar
+metodologia:meca_apply
+anchor:metricas
+metodologia:meca_kpi_framework
